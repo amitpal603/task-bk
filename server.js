@@ -22,7 +22,7 @@ app.get('/',(req,res) => {
  res.send('Hello')
 })
 
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 3000
 
 app.listen(PORT,() => {
     console.log(`server listen or running http://localhost:${PORT}`);
