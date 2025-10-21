@@ -11,10 +11,11 @@ const corsOptions = {
     credential : true
     
 }
+
 const app = express()
 connectDB()
-app.use(express.json())
 app.use(cors(corsOptions))
+app.use(express.json())
 app.use('/api/task',TaskRouters)
 
 app.get('/',(req,res) => {
